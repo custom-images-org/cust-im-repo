@@ -1,2 +1,3 @@
 vm:
-  use: build-tester-travis
+  use: 
+    name: build-tester-travis
