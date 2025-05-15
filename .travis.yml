@@ -1,2 +1,10 @@
+os: linux
+language: generic
+dist: focal
+
+before_install:
+  - sudo apt-get -y install libxml2-dev
+
 vm:
-  use: build-tester-travis
+  create:
+    name: test-image-new
