@@ -8,10 +8,10 @@ jobs:
       name: "Job 1 – Create image"
       vm:
         create:
-          name: test-same-name
+          name: test-same-name1
 
     - stage: create image
       name: "Job 2 – Create image"
       vm:
         create:
-          name: test-same-name
+          name: test-same-name1
