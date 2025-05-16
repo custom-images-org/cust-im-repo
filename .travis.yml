@@ -5,13 +5,13 @@ dist: focal
 jobs:
   include:
     - stage: create image
-      name: "Job 1 – Create image"
+      name: "Job 1"
       vm:
         create:
           name: test-same-name1
 
     - stage: create image
-      name: "Job 2 – Create image"
+      name: "Job 2"
       vm:
         create:
           name: test-same-name1
