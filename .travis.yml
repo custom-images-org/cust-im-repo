@@ -7,4 +7,4 @@ before_install:
 
 vm:
   create:
-    name: test-image-new
+    name: cust-image-1605
