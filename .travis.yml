@@ -10,8 +10,8 @@ jobs:
         create:
           name: test-same-name
 
-    - stage: create image
-      name: "Job 2 – Create image"
-      vm:
-        create:
-          name: test-same-name
+    # - stage: create image
+    #   name: "Job 2 – Create image"
+    #   vm:
+    #     create:
+    #       name: test-same-name
