@@ -1,16 +1,15 @@
 os: linux
 language: generic
 dist: focal
-
 jobs:
   include:
-    - stage: "Tests"
-      name: "Create custom image"
+    - stage: create image
+      name: "Job 1 – Create image"
       vm:
         create:
-          name: cust-image-1605
-    - stage: "Tests"
-      name: "Create unique custom image"
+          name: conflict-test-image
+    - stage: create image
+      name: "Job 2 – Create image"
       vm:
         create:
-          name: job-unique
+          name: conflict-test-image
