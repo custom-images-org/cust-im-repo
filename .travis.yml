@@ -1,10 +1,17 @@
-# os: linux
-# language: generic
-# dist: focal
+os: linux
+language: generic
+dist: focal
 
-# before_install:
-#   - sudo apt-get -y install libxml2-dev
+jobs:
+  include:
+    - stage: create image
+      name: "Job 1 – Create image"
+      vm:
+        create:
+          name: test-same-name
 
-vm:
-  use:
-    name: cust-image-1605
+    - stage: create image
+      name: "Job 2 – Create image"
+      vm:
+        create:
+          name: test-same-name
