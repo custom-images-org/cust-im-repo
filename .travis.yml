@@ -4,14 +4,18 @@ dist: focal
 
 jobs:
   include:
-    - stage: create image
-      name: "Job 1"
+    - stage: "Tests"
+      name: "Create custom image (conflict)"
       vm:
         create:
-          name: test-same-name1
-
-    - stage: create image
-      name: "Job 2"
+          name: job-test1
+    - stage: "Tests"
+      name: "Create custom image (conflict)"
       vm:
         create:
-          name: test-same-name1
+          name: job-test1
+    - stage: "Tests"
+      name: "Create unique custom image"
+      vm:
+        create:
+          name: job-unique
