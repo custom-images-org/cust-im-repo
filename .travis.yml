@@ -1,10 +1,10 @@
-os: linux
-language: generic
-dist: focal
+# os: linux
+# language: generic
+# dist: focal
 
-before_install:
-  - sudo apt-get -y install libxml2-dev
+# before_install:
+#   - sudo apt-get -y install libxml2-dev
 
 vm:
-  create:
+  use:
     name: cust-image-1605
