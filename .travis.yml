@@ -4,35 +4,35 @@ dist: focal
 
 jobs:
   include:
-    - stage: "Tests"
+    - stage: "Tests1"
       name: "Create custom image 1"
       vm:
         create:
           name: 0406-org-image1
       script:
         - echo "Running Job 1"
-    - stage: "Tests"
+    - stage: "Tests1"
       name: "Create custom image 2"
       vm:
         create:
           name: 0406-org-image2
       script:
         - echo "Running Job 2"
-    - stage: "Tests"
+    - stage: "Tests1"
       name: "Create custom image 3"
       vm:
         create:
           name: 0406-org-image3
       script:
         - echo "Running Job 3"
-    - stage: "Tests"
+    - stage: "Tests1"
       name: "Create custom image 4"
       vm:
         create:
           name: 0406-org-image4
       script:
         - echo "Running Job 4"
-    - stage: "Tests"
+    - stage: "Tests1"
       name: "Create custom image 5"
       vm:
         create:
